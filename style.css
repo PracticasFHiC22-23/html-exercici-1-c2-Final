@@ -48,6 +48,13 @@ footer {
   height: fit-content;
 }
 
+.titulRaza{
+  color:black;
+  text-align:justify;
+  width: 30%;
+  height: fit-content;
+}
+
 
 .menu ul li a {
   font-size: 20px;
