@@ -1,55 +1,69 @@
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: stretch;
-  overflow-x: hidden;
-}
-
-.titol {
-  color: white;
+header {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 10vh;
   text-align: center;
-  background-color:rgb(204, 172, 52);
-  height: 20vh;
 }
 
-.fons{
+body {
+  height: 100vh;
+}
+
+footer {
+  height: 10vh;
+  text-align: end;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.gat {
   background-image: url('./imagenes/Gato.JPG');
   background-size: cover;
   height: 80vh;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: white;
-  flex-grow: 1;
 }
-.body{
-  height: calc(100vh - 40vh);
-}
-.segonaColumna{
+.fons{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: flex;
   background-size: cover;
+  height: 80vh;
+  background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  flex-grow: 1;
 }
-.columna {
-  background-color: rgb(243, 243, 220);
+.color{
+  background-color:rgb(204, 172, 52);
+}
+
+.text{
+  color: white;
+  text-align: center;
+  width: 50%;
+  height: fit-content;
+}
+
+
+.menu ul li a {
+  font-size: 20px;
+  color: rgb(95, 13, 112);
+  text-decoration: underline;
+}
+
+
+.menu b {
+  font-size: 28px;
+}
+.menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 10px;
-  height: flex;
   flex-grow: 1;
 }
 
@@ -68,59 +82,22 @@ body {
   cursor: pointer;
   border: none; 
   text-align: center;
+  margin-bottom: 5vh;
 }
 
-footer {
-  width: 100%;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background-color: rgb(204, 172, 52);
-  height: 20vh;
-  color: white;
-  font-style: italic;
-  padding-right: 10px;
-  margin-bottom: flex;
-}
-
-.menu ul {
-  padding: 0;
-  margin: 0;
-}
-
-.menu ul li a {
-  margin-bottom: 10px;
-  font-size: 20px;
-  color: rgb(95, 13, 112);
-  text-decoration: underline;
-}
-
-
-.menu b {
-  font-size: 28px;
-}
-
-h1 {
-  margin-top: 25px;
-}
 
 .formulari {
-  border: 2px solid rgb(217, 179, 16);
+  border: 1px solid rgb(212, 208, 208);
   padding: 20px;
   border-radius: 10px;
-  width: 40%;
   background-color: rgb(250, 243, 217);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: auto;
-  height: max-content;
-  margin-top: 25px;
-  margin-bottom: 5%;
-  
+  width: 40vh;
 }
+
 .formulari button {
   background-color: rgb(47, 218, 87);
   text-align: center; 
@@ -128,21 +105,44 @@ h1 {
   border-radius: 5px; 
   text-align: center;
   margin-top: 50px;
+  width: 70%;
 }
 .taula {
+  position: fixed;
   border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .taula td, .taula th {
-  border: 1px solid black;
+  border: 1px solid rgb(212, 208, 208);
   padding: 8px;
   text-align: center;
+  width: 40vh;
+  height: fit-content;
 }
 
 .taula tr:nth-child(even) {
-  background-color: yellow;
+  background-color:rgb(250, 243, 217);
 }
 
 .taula tr:nth-child(odd) {
   background-color: white;
+}
+
+.formulari, .taula {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5vh;
+  height: max-content;
+  width: auto;
+  }
+
+.formulari input{
+width: 90%; 
+text-align: center;
 }
